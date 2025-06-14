@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Library Example</title>
+  </head>
+
+  <body>
+    <script type="module">
+      import { default as initWasm, calculate_add } from "./pkg/call_rust.js";
+
+      const wasm = await initWasm();
+
+      const result = wasm.calculate_add(1, 2);
+
+      const div = document.createElement("div");
+
+      div.innerHTML = `
+      <h1>Rust 계산 결과</h1>
+      <p>1 + 2 = ${result}</p>
+      `;
+
+      document.body.appendChild(div);
+    </script>
+  </body>
+</html>

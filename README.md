@@ -8,12 +8,31 @@ cmake 4.0.2
 
 ```
 git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
 git pull
 ./emsdk install latest
 ./emsdk activate latest
 ```
 
-# cmake for mac
+# Wasmtime 설치 - WASM 런타임
+
+```
+curl https://wasmtime.dev/install.sh -sSf | bash
+```
+
+# Rust 설치
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+# Wask-pack 설치
+
+```
+cargo install wasm-pack
+```
+
+# CMake 설치 for mac
 
 ```
 brew install cmake
