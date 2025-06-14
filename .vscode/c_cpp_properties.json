@@ -11,6 +11,21 @@
       "cStandard": "c17",
       "cppStandard": "gnu++17",
       "intelliSenseMode": "windows-gcc-x64"
+    },
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/Users/minwook/Desktop/project/emsdk/upstream/emscripten/system/include"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+      ],
+      "compilerPath": "/usr/bin/clang++",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-x64"
     }
   ],
   "version": 4
