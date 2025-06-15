@@ -38,9 +38,19 @@ cargo install wasm-pack
 brew install cmake
 ```
 
+# Qt 설치
+
+https://download.qt.io/official_releases/online_installers/
+
 # WASM 명령어
 
 ```
 source ./emsdk_env.sh # 터미널을 새로 열때마다 환경설정
 emcc -lembind -o <outfile .js> <source .cpp>
+```
+
+# emsdk 버전 변경
+
+```
+./emsdk install 3.1.2
 ```
